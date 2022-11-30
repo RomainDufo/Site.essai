@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <title>Ma page de test</title>
+</head>
+
+<body>
+    <nav class="Barre">
+        <ul class="nav-list">
+            <li><a href="page1.html">Accueil</li>
+            <li><a href="page2.html">Événement</li>
+            <li><a href="page3.html">A propos</li>
+            <li><a href="Formulaire-contact.html">Contact</li>
+        </ul>
+    </nav>
+
+    <p>Si vous avez besoin de me contacter pour une question sur une de mes oeuvres, je vous invite à remplir ce
+        formulaire de contact et je tacherais de vous répondre dans les plus brefs délais</p>
+    
+        <form action="/my-handling-form-page" method="post">
+        <div>
+            <label for="name">Nom:</label>
+            <input type="text" id="Nom" name="Nom">
+        </div>
+        <div>
+            <label for="phone number">Téléphone:</label>
+            <input type="phone number" id="phone number" name="phone number">
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+            <label for="msg object">Objet:</label>
+            <input type="msg object" id="msg object" name="msg object">
+        </div>
+        <div>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Envoyer le message</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
