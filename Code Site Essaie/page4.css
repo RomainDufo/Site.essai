@@ -1,0 +1,28 @@
+#barre-verticale{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 30%;
+    background-color: purple;
+    opacity: 0.5;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#bloc1{
+    border: 2px transparent;
+    padding: 25px 150px;
+}    
+
+#p-bloc1{
+    display: flex;
+    align-items: flex-start;
+}
+
+#bloc2{
+    padding: 25px 100px;
+}
