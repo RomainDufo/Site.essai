@@ -9,14 +9,19 @@
 
 <body>
     <header>
-        <nav class="Barre">
+        <nav id="Barre">
             <ul class="nav-list">
-                <li> <a href="Accueil.html">Accueil</a> </li>
-                <li> <a href="Galerie.html">Galerie</a> </li>
-                <li> <a href="Evenements.html">Evenements</li>
-                <li> <a href="Apropos.html">A propos</a> </li>
-                <li> <a href="Contact.html">Contact</a> </li>
+                <li> <a href="Accueil.html">Accueil</a></li>
+                <li> <a href="Galerie.html">Galerie</a></li>
+                <li> <a href="Evenements.html">Evenements</a></li>
+                <li> <a href="Apropos.html">A propos</a></li>
+                <li> <a href="Contact.html">Contact</a></li>
+                <form id="recherche" class="recherche" method="GET" action="rechercher.php">
+                    <input type="text" placeholder="Recherche">
+                    <button type="submit" id="bouton"><span class="pinceau-recherche" type="submit"></span></button>
+                </form>
             </ul>
+
         </nav>
     </header>
 
