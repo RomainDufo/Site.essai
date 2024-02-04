@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contact.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <nav id="nav_bar">
+            <ul class="nav-list">
+                <li> <a href="Accueil.html">Accueil</a></li>
+                <li> <a href="Galerie.html">Galerie</a></li>
+                <li> <a href="Evenements.html">Evenements</a></li>
+                <li> <a href="Apropos.html">A propos</a></li>
+                <li> <a href="Contact.html">Contact</a></li>
+                <form id="recherche" class="recherche" method="GET" action="rechercher.php">
+                    <input type="text" placeholder="Recherche">
+                    <button type="submit" id="bouton"><span class="pinceau-recherche" type="submit"></span></button>
+                </form>
+            </ul>
+
+        </nav>
+    </header>
+    <article>
+        <h1>Une question sur une de mes oeuvres ?</h1>
+        <h2>
+            N'hésitez pas, ce formulaire de contact est là pour ça.
+            <br>
+            A bientot !
+        </h2>
+
+        <form id="formulaire" action="/my-handling-form-page" method="post">
+            <div>
+                <label for="name">Nom/Prénom:</label>
+                <input type="text" id="prenom" name="Prénom">
+                <input type="text" id="nom" name="Nom">
+            </div>
+            <div>
+                <label for="phone number">Téléphone:</label>
+                <input type="phone number" id="phone number" name="phone number">
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="mail" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="msg object">Objet:</label>
+                <input type="msg object" id="msg object" name="msg object">
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </article>
+
+    <div id="div1">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta pharetra sodales. Donec sed fermentum
+            lectus. Proin pharetra, quam ut pretium mollis, dolor nulla blandit nulla, vel volutpat nibh nisi id diam.
+            Donec eget arcu nec felis venenatis commodo id a libero. Sed at commodo lectus, consectetur faucibus turpis.
+            Fusce at felis facilisis, blandit libero in, condimentum libero. Nulla finibus ante nec massa malesuada, vel
+            rutrum urna tincidunt. Quisque non tristique sapien.
+
+
+        </p>
+
+
+
+    </div>
+    <div id="container">
+        <canvas id="canvas1" width="700" height="200"></canvas>
+        <button id="btn" type="submit" onclick="myMove()">Envoyer
+            <img id="img_envoyer" src="/Icons/envoye.png" alt="icon" style="width: 25px; height: 25px;">
+        </button>
+    </div>
+
+
+    <div>
+        <div>
+            <button id="btn" type="submit">
+                <img id="img_envoyer" src="/Icons/bijoux.png" alt="icon" style="width: 25px; height: 25px;">
+            </button>
+        </div>
+        <div>
+            <button id="btn" type="submit">
+                <img id="img_envoyer" src="/Icons/tableau-de-peinture.png" alt="icon"
+                    style="width: 25px; height: 25px;">
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <footer>
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                    class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
+                href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Company Name © 2022</p>
+    </footer>
+
+
+</body>
+
+</html>

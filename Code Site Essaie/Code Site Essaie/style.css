@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: white;
+  width: calc(100% - 40px);
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header__logo img {
+  max-height: 88px;
+}
+
+.header__nav__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav__menu__link {
+  margin-right: 20px;
+}
+
+.header__nav__menu__link:last-of-type {
+  margin-right: initial;
+}
+
+.header__nav__menu__link a {
+  color: black;
+  font-family: 'Arial';
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.header__nav__menu__link a:after {
+  content: '';
+  height: 2px;
+  background-color: #fff;
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.header__nav__menu__link a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__burger svg {
+  stroke: black;
+  width: 22px;
+  height: 22px;
+}
+
+.header__nav__close {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+
+
+  .header__burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 98px;
+    right: 18%;
+    width: 380px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .header__nav.open {
+    display: flex;
+    animation: transformMenu 300ms ease-in-out forwards;
+  }
+
+  @keyframes transformMenu {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: initial;
+    }
+  }
+
+  .header__nav__menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__nav__menu__link {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .header__nav__menu__link a {
+    font-size: 25px;
+  }
+
+  .header__nav__close {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header__nav__close svg {
+    stroke: black;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .overlay__menu__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e7beee;
+    display: none;
+  }
+
+  .overlay__menu__mobile.open {
+    display: block;
+  }
+}
