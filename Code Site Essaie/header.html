@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="overlay__menu__mobile" onclick="closeMenuMobile()"></div>
+    <header class="header">
+        <div class="header__logo">
+            <img src="logo_Sylvia.jpg" alt="logo_Sylvia">
+        </div>
+
+
+        <nav class="header__nav">
+           
+            <ul class="header__nav__menu">
+                <li class="header__nav__menu__link">
+                    <a href="#">Accueil</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="#">Galeries</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="#">A Propos</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+        </div>
+        <div class="header__nav__close" onclick="closeMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+    </header>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis, turpis sit amet accumsan
+            bibendum, erat odio tristique augue, et finibus nibh nulla commodo dui. Donec et dui massa. Fusce
+            bibendum laoreet vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Integer id ex suscipit, sodales metus nec, lobortis mi. Phasellus congue, ante ut
+            molestie tincidunt, nisi turpis dapibus erat, vel fringilla felis elit ut ex. Praesent quis rhoncus
+            lectus, quis ullamcorper mi. Cras et velit ut urna bibendum sagittis nec vel nisi. Vivamus feugiat
+            vestibulum laoreet. Nam cursus rutrum libero, ac posuere ligula commodo sit amet. Suspendisse nulla
+            massa, ullamcorper a imperdiet vitae, tincidunt at nulla. Praesent orci neque, auctor ac sem sed,
+            egestas aliquet augue. Aliquam elementum risus vel vestibulum posuere. Sed et nibh maximus, convallis
+            massa et, mattis velit.
+
+            Suspendisse eget diam fermentum, bibendum mauris sit amet, bibendum sapien. Aliquam hendrerit rhoncus
+            sem, in pellentesque ante fermentum quis. Phasellus sodales sit amet neque quis interdum. Donec at velit
+            diam. Aliquam orci velit, placerat non libero at, dignissim congue ex. Pellentesque tempor fringilla
+            erat at elementum. Duis pulvinar consectetur nunc, commodo dignissim sapien convallis a. Maecenas dictum
+            sem id turpis pellentesque tristique. Donec quis massa erat. Fusce quis nisl auctor, fringilla lacus
+            vitae, tincidunt mauris. Maecenas sed nisi in nunc tempus tristique vitae vel risus.
+
+            Vivamus nulla enim, suscipit pretium lectus in, blandit vulputate tellus. Aliquam convallis magna a
+            sapien vestibulum dapibus. Praesent lacinia ornare turpis sit amet blandit. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas. In iaculis, nulla at lobortis luctus,
+            ipsum sem porttitor metus, non sagittis lectus sapien ac felis. In ac purus malesuada, ornare nisl
+            vitae, bibendum est. Proin nisi odio, dictum eget cursus a, porta eget magna. Morbi imperdiet, urna ut
+            pellentesque accumsan, risus nulla malesuada ex, in commodo tortor nisi vel felis.
+
+            Nam ornare odio ut ultricies bibendum. In hac habitasse platea dictumst. Maecenas id nisi lectus. Nunc
+            porta ut ex quis consequat. Nunc id luctus velit. Duis faucibus dui aliquam mi blandit tempor. Praesent
+            nibh augue, egestas nec sem ut, volutpat volutpat nibh. Ut eget luctus ex. Curabitur consequat lectus in
+            ex fermentum, mollis ultricies mi gravida. Phasellus sit amet tellus in magna pellentesque finibus
+            mollis ac ipsum. Donec elementum ipsum purus, vitae venenatis metus vestibulum at. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur arcu libero, dictum in
+            lorem vel, vestibulum lacinia neque. Aenean justo lectus, porta eu vehicula et, consectetur vitae leo.
+
+            Maecenas sit amet purus sagittis, fringilla massa sit amet, hendrerit lorem. Curabitur sed viverra nisi.
+            Nam consequat felis nec arcu ultricies vestibulum vitae in ex. Vivamus hendrerit libero ac odio posuere,
+            at scelerisque urna imperdiet. Quisque quis feugiat magna, eget facilisis augue. Praesent sem nunc,
+            dictum id facilisis non, rutrum et ex. Quisque aliquet finibus lacus, at viverra mi tristique ac.
+            Vivamus cursus, mi et euismod tincidunt, augue elit viverra dui, mollis faucibus massa ex at sapien.
+            Fusce pulvinar consequat eleifend. Cras congue velit ante, at eleifend nibh maximus sed.
+
+        </p>
+    </div>
+
+
+    <script>
+        function openMenuMobile() {
+            document.querySelector('.header__nav').classList.add('open');
+            document.querySelector('.overlay__menu__mobile').classList.add('open');
+            document.querySelector('.header__burger svg').style.display='none';
+            document.querySelector('.header__nav__close svg').style.display='block';
+        }
+        function closeMenuMobile() {
+            document.querySelector('.header__nav').classList.remove('open');
+            document.querySelector('.overlay__menu__mobile').classList.remove('open');
+            document.querySelector('.header__nav__close svg').style.display='none';
+            document.querySelector('.header__burger svg').style.display='block';
+        }
+    </script>
+</body>
+
+</html>

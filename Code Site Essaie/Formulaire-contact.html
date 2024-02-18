@@ -4,47 +4,48 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="page_formulaire.css">
     <title>Ma page de test</title>
+    <script src="https://kit.fontawesome.com/c152fb8c3e.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <nav class="Barre">
-        <ul class="nav-list">
-            <li><a href="page1.html">Accueil</li>
-            <li><a href="page2.html">Événement</li>
-            <li><a href="page3.html">A propos</li>
-            <li><a href="Formulaire-contact.html">Contact</li>
-        </ul>
-    </nav>
+    <div class="form_container">
 
-    <p>Si vous avez besoin de me contacter pour une question sur une de mes oeuvres, je vous invite à remplir ce
-        formulaire de contact et je tacherais de vous répondre dans les plus brefs délais</p>
-    
-        <form action="/my-handling-form-page" method="post">
-        <div>
-            <label for="name">Nom :</label>
-            <input type="text" id="Nom" name="Nom">
-        </div>
-        <div>
-            <label for="phone number">Téléphone :</label>
-            <input type="phone number" id="phone number" name="phone number">
-        </div>
-        <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="user_mail">
-        </div>
-        <div>
-            <label for="msg object">Objet:</label>
-            <input type="msg object" id="msg object" name="msg object">
-        </div>
-        <div>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
-        <div class="button">
-            <button type="submit">Envoyer</button>
-        </div>
-    </form>
+        <form action="/action_page.php">
+
+
+            <div class="names_container">
+                <input type="text" style="background-image: url(utilisateur.png)" id="fname" name="firstname"
+                    placeholder="Prénom">
+
+                <input type="text" id="sname" name="surname" placeholder="Nom">
+            </div>
+
+
+            <div class="infos_container">
+
+                <input type="email" style="background-image: url(arroba.png)" id="email" name="email"
+                    placeholder="Email">
+
+
+                <input type="tel" style="background-image: url(tel_formulaire.png)" id="telephone" name="téléphone"
+                    placeholder="Téléphone">
+
+                <input type="text" style="background-image: url(question.png)" id="sujet" name="sujet" placeholder="Objet">
+
+
+                <textarea type="textarea" style="background-image: url(stylo.png)" id="textarea" name="subject"
+                    placeholder="Message"></textarea>
+
+                <input type="submit" id="submit" class="submit" value="Envoyer">
+            </div>
+
+
+        </form>
+    </div>
+
 
 </body>
 

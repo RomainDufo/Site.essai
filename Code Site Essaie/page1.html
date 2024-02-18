@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formulaire.css" />
 </head>
+
 <body>
-    <nav class="Barre">
-        <ul class="nav-list">
-            <li><a href="page1.html">Accueil</li>
-            <li><a href="page2.html">Événement</li>
-            <li><a href="page3.html">A propos</li>
-            <li><a href="Formulaire-contact.html">Contact</li>
-        </ul>
-    </nav>
-    
+    <div class="contact_container">
+        <div id="contact_container_bis" class="container">
+            <p id="titre">Contact</p>
+
+            <div id="container_tabs">
+                <div id="contact_container_tab1" class="contact_container_tab">
+                    <div class="contact_cercle" style="background-image: url(email.png);"></div>
+                    <p>adresse.email@hotmail.com</p>
+                </div>
+
+                <div id="contact_container_tab2" class="contact_container_tab">
+                    <div class="contact_cercle" style="background-image: url(telephoner.png);"></div>
+                    <p>04.99.35.78.30</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="contact_container_purple" class="container">
+            <p>Retrouvez moi aussi sur:</p>
+            <div id="contact_reseaux_container">
+                <div class="contact_cercle" style="background-image: url(facebook.png);"></div>
+                <div class="contact_cercle" style="background-image: url(instagram.png);"></div>
+            </div>
+
+        </div>
+
+        <div id="contact_container_yellow" class="container">
+            <div class="contact_cercle" style="background-image: url(calendrier.png);"></div>
+            <p>Voir événements à venir</p>
+        </div>
+    </div>
 </body>
+
 </html>

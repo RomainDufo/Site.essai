@@ -5,27 +5,78 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
-        <nav id="Barre">
-            <ul class="nav-list">
-                <li> <a href="Accueil.html">Accueil</a></li>
-                <li> <a href="Galerie.html">Galerie</a></li>
-                <li> <a href="Evenements.html">Evenements</a></li>
-                <li> <a href="Apropos.html">A propos</a></li>
-                <li> <a href="Contact.html">Contact</a></li>
-                <form id="recherche" class="recherche" method="GET" action="rechercher.php">
-                    <input type="text" placeholder="Recherche">
-                    <button type="submit" id="bouton"><span class="pinceau-recherche" type="submit"></span></button>
-                </form>
+        <nav>
+            <a id="link" href="#"><span id="burger"></span></a>
+            <ul class="list-unstyled">
+                </div>
+                <li>
+                    <a href="Accueil.html">Accueil</a>
+                </li>
+                <li>
+                    <ul class="sous_menu">
+                        <li><a href="#">Bijoux</a></li>
+                        <li><a href="#">Peintures</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=" Evenements.html">Evenements</a>
+                </li>
+                <li>
+                    <a href=" Apropos.html">A propos</a>
+                </li>
+                <li>
+                    <a href=" Contact.html">Contact</a>
+                </li>
             </ul>
-
         </nav>
     </header>
 
+    <!--  <section id="section1">
+        <h2 id="titre_galeries">Galeries</h2>
+        <div id="container">
+            <div id="bouton_gauche" class="compartiment">
+                <a href="#"><img src="/Icons/bijoux.png" alt="bijoux" width="50px" height="50px"></a>
+                <p>Bijoux</p>
+            </div>
+            <div id="bouton_droite" class="compartiment">
+                <a href="#"><img src="/Icons/tableau-de-peinture.png" alt="peintures" width="50px" height="50px"></a>
+                <p>Peintures</p>
+            </div>
+        </div>
+    </section> -->
 
+    <hr>
+    <section id="section2">
+        <div id="slider" data-ride="slider">
+
+            <ul>
+                <li>
+                    <img src="Images/images (1).jpg" alt="image 1" />
+                </li>
+                <li>
+                    <img src="Images/images (2).jpg" alt="image 2" />
+                </li>
+                <li>
+                    <img src="Images/images (3).jpg" alt="image 3" />
+                </li>
+                <li>
+                    <img src="img/image4.jpg" alt="image 4" />
+                </li>
+            </ul>
+
+            <span id="legend"></span>
+
+        </div>
+
+        <script src="js/slider.js"></script>
+    </section>
+
+    <script src="slider.js"></script>
 </body>
 
 </html>
